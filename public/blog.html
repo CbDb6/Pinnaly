@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pinnaly | Blog</title>
+<meta name="description" content="Notes on fundraising, startup strategy and finance from the Pinnaly team. New articles are on the way.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --teal:#0b3133; --teal-2:#0f3f42; --lime:#dcfda3; --lime-deep:#c8f082;
+    --beige:#f6f5f2; --white:#fff; --ink:#0b3133; --muted:rgba(11,49,51,.7); --line:rgba(11,49,51,.12);
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth;-webkit-tap-highlight-color:transparent}
+  body{font-family:'Inter',sans-serif;background:var(--beige);color:var(--ink);-webkit-font-smoothing:antialiased}
+  a{text-decoration:none;color:inherit}
+  .wrap{max-width:840px;margin:0 auto;padding:0 24px}
+  .mono{font-family:'Space Mono',monospace}
+  .badge{display:inline-block;border:1px solid var(--teal);border-radius:999px;padding:6px 16px;font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--teal)}
+
+  /* header (matches v3 nav) */
+  header{position:sticky;top:0;z-index:100}
+  .hdr-inner{max-width:1440px;margin:0 auto;padding:16px 24px}
+  nav{background:rgba(237,236,233,.93);backdrop-filter:blur(10px);border:1px solid var(--line);border-radius:14px;
+      padding:12px 18px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+  .logo{font-weight:800;font-size:1.25rem;letter-spacing:-.02em;color:var(--teal)}
+  .logo b{color:rgba(11,49,51,.5);font-weight:800}
+  .btn-teal{display:inline-flex;align-items:center;gap:8px;background:var(--teal);color:var(--white);font-size:.85rem;font-weight:600;padding:11px 18px;border-radius:8px;transition:.2s}
+  .btn-teal:hover{background:var(--teal-2)}
+
+  /* hero head (teal band) */
+  .head{background:var(--teal);color:var(--white);padding:80px 0 64px}
+  .head .badge{border-color:rgba(255,255,255,.35);color:var(--white)}
+  .head h1{color:var(--lime);font-size:clamp(2.4rem,6vw,4rem);font-weight:800;letter-spacing:-.03em;line-height:1.04;margin-top:22px}
+  .head .updated{margin-top:18px;font-family:'Space Mono',monospace;font-size:12px;letter-spacing:.06em;color:rgba(255,255,255,.65)}
+
+  /* body */
+  main{padding:56px 0 88px}
+  .intro{font-size:1.15rem;line-height:1.6;color:var(--ink);font-weight:500;max-width:720px}
+
+  /* empty state. Replaced by the article list once the first post exists. */
+  .empty{background:var(--white);border:1px solid var(--line);border-radius:20px;padding:48px 34px;margin-top:36px;
+         box-shadow:0 26px 50px -30px rgba(11,49,51,.3);text-align:center}
+  .empty .kicker{font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+  .empty h2{font-size:1.6rem;font-weight:800;letter-spacing:-.02em;color:var(--teal);margin-top:14px}
+  .empty p{font-size:1.02rem;line-height:1.7;color:var(--muted);margin:14px auto 0;max-width:520px}
+  .empty .btn-teal{margin-top:26px}
+
+  .topics{margin-top:44px}
+  .topics h3{font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+  .topics ul{list-style:none;margin-top:16px;display:grid;gap:10px}
+  .topics li{font-size:1.02rem;line-height:1.65;color:var(--muted);padding:8px 0 8px 20px;position:relative}
+  .topics li::before{content:"";position:absolute;left:0;top:16px;width:7px;height:7px;border-radius:50%;background:var(--teal)}
+
+  footer{background:var(--teal);color:var(--white);padding:40px 0}
+  footer .wrap{display:flex;flex-wrap:wrap;gap:14px;justify-content:space-between;align-items:center;max-width:1280px}
+  footer .cp{font-size:.85rem;color:rgba(255,255,255,.6)}
+  footer a.blink{font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--lime)}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="hdr-inner">
+    <nav>
+      <a href="index.html" class="logo">Pinna<b>ly</b></a>
+      <a href="index.html" class="btn-teal">Back to site</a>
+    </nav>
+  </div>
+</header>
+
+<div class="head">
+  <div class="wrap">
+    <span class="badge">Journal</span>
+    <h1>Blog</h1>
+    <div class="updated">Notes on fundraising, strategy &amp; finance</div>
+  </div>
+</div>
+
+<main>
+  <div class="wrap">
+    <p class="intro">We write about what we see in the room with founders: raising a first round, pricing a product, and keeping the cash runway honest. Short pieces, no filler.</p>
+
+    <div class="empty">
+      <div class="kicker">Coming soon</div>
+      <h2>No articles yet.</h2>
+      <p>The first pieces are being written. If there is something you want us to cover, tell us and we will put it near the top of the list.</p>
+      <a href="index.html#contact" class="btn-teal">Suggest a topic</a>
+    </div>
+
+    <div class="topics">
+      <h3>What we plan to cover</h3>
+      <ul>
+        <li>Getting investor-ready: the numbers a pre-seed deck actually needs</li>
+        <li>Go-to-market for a first paying customer</li>
+        <li>Liquidity management for a small company</li>
+        <li>Reading your own runway without fooling yourself</li>
+      </ul>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="cp">© 2026 Pinnaly s. r. o. · Registered in Slovakia · All rights reserved.</div>
+    <a href="index.html" class="blink">Back to site</a>
+  </div>
+</footer>
+
+</body>
+</html>
